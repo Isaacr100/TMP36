@@ -7,7 +7,9 @@ Using the library is very easy, and there are only a few functions to learn.
  * **`name.getTempF()`** \- Returns the temperature in Fahrenheit
  * **`name.getTempC()`** \- Returns the temperature in Celcius<br />
  
- The example included writes the temperature in both scales to the serial monitor.
+The SerialTemp example included writes the temperature in both scales to the serial monitor.
+## New in v1.1.0
+New example sketch ConsoleSerialTemp is exactly the same as SerialTemp, but it uses the Console.
 ## License
  Copyright 2017 Isaac100
 
