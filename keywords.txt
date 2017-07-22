@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-TMP36	KEYWORD1	TMP36
+TMP36	KEYWORD1
      				
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -15,7 +15,3 @@ TMP36	KEYWORD1	TMP36
 getTempF	KEYWORD2
 getTempC	KEYWORD2
 getVoltage	KEYWORD2
-
-#######################################
-# Constants (LITERAL1)
-#######################################
