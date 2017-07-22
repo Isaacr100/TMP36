@@ -26,12 +26,12 @@
 class TMP36
 {
   public:
-    TMP36(int pin);
+    TMP36(uint8_t pin);
     float getVoltage();
     float getTempC();
     float getTempF();
   private:
-    int _pin;
+    uint8_t _pin;
     int _value;
     float _voltage;
     float _tempC;
