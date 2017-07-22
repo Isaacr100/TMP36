@@ -32,7 +32,7 @@ class TMP36
     float getTempF();
   private:
     uint8_t _pin;
-    int _value;
+    uint8_t _value;
     float _voltage;
     float _tempC;
     float _tempF;    
