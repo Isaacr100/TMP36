@@ -2,10 +2,10 @@
 The TMP36 library is a very simple Arduino library that converts the analog values from a TMP36 temperature sensor directly into Celcius and Fahrenheit so you don't have to.
 ## Using the library
 Using the library is very easy, and there are only a few functions to learn.
- * **`TMP36 name(pin)`** \- Creates an instance of the class where **name** is a name you choose and **pin** is the pin the TMP36 sensor is connected to
- * **`name.getVoltage()`** \- Returns the voltage
- * **`name.getTempF()`** \- Returns the temperature in Fahrenheit
- * **`name.getTempC()`** \- Returns the temperature in Celcius<br />
+ * `TMP36 name(pin)` - Creates an instance of the class where **name** is a name you choose and **pin** is the pin the TMP36 sensor is connected to
+ * `name.getVoltage()` - Returns the voltage
+ * `name.getTempF()` - Returns the temperature in Fahrenheit
+ * `name.getTempC()` - Returns the temperature in Celcius<br />
  
 The SerialTemp example included writes the temperature in both scales to the serial monitor.
 ## New in v1.1.0
