@@ -35,7 +35,8 @@ class TMP36
     uint8_t _value;
     float _voltage;
     float _tempC;
-    float _tempF;    
+    float _tempF; 
+    void getValues();
 };
 
 #endif
