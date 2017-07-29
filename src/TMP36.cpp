@@ -23,7 +23,7 @@
 
 TMP36::TMP36(uint8_t pin, float aref) {
  pinMode(pin, INPUT);
- _aref = aref
+ _aref = aref;
  _pin = pin;  
 }
 
