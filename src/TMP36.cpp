@@ -21,8 +21,7 @@
 #include "Arduino.h"
 #include "TMP36.h"
 
-TMP36::TMP36(uint8_t pin)
-{
+TMP36::TMP36(uint8_t pin) {
   pinMode(pin, INPUT);
   _pin = pin;  
 }
