@@ -21,34 +21,30 @@
 #include "Arduino.h"
 #include "TMP36.h"
 
-TMP36::TMP36(uint8_t pin)
-{
-  pinMode(pin, INPUT);
-  _pin = pin;  
+TMP36::TMP36(uint8_t pin, float aref) {
+ pinMode(pin, INPUT);
+ _aref = aref;
+ _pin = pin;  
 }
 
-float TMP36::getVoltage()
-{
-  _value = analogRead(_pin);
-  _voltage = (_value/1024.0) * 5.0;
-  return _voltage;
+void TMP36::getValues() {
+ _value = analogRead(_pin);
+ _voltage = (_value/1024.0) * _aref;
+ _tempC = (_voltage - .5) * 100;  
+ _tempF = (_tempC * 1.8) + 32; 
+} 
+
+float TMP36::getVoltage() {
+ getValues(); 
+ return _voltage;
 }
 
-float TMP36::getTempC()
-{
-  _value = analogRead(_pin);
-  _voltage = (_value/1024.0) * 5.0;
-  _tempC = (_voltage - .5) * 100;  
-  return _tempC;
+float TMP36::getTempC() {
+ getValues(); 
+ return _tempC;
 }
 
-float TMP36::getTempF()
-{
-  _value = analogRead(_pin);
-  _voltage = (_value/1024.0) * 5.0;
-  _tempC = (_voltage - .5) * 100;  
-  _tempF = (_tempC * 1.8) + 32; 
-  return _tempF;
+float TMP36::getTempF() {
+ getValues();
+ return _tempF;
 }
-
-
