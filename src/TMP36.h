@@ -33,7 +33,7 @@ class TMP36
   private:
     uint8_t _pin;
     uint8_t _value;
-    float _aref
+    float _aref;
     float _voltage;
     float _tempC;
     float _tempF; 
