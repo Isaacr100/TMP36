@@ -11,7 +11,7 @@ The SerialTemp example included writes the temperature in both scales to the ser
 ## New in v1.1.0
 New example sketch ConsoleSerialTemp is exactly the same as SerialTemp, but it uses the Console.
 ## New in v1.2.0
-I cleaned up the cpp code to make it a little more effiecient, and added the option to specify the voltage applied to the TMP36. 
+I cleaned up the cpp code to make it a little more efficient, and added the option to specify the voltage applied to the TMP36. 
 ## License
  Copyright 2017 Isaac100
 
