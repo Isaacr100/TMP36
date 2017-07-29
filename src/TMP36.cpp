@@ -27,27 +27,25 @@ TMP36::TMP36(uint8_t pin)
   _pin = pin;  
 }
 
-float TMP36::getVoltage()
-{
-  _value = analogRead(_pin);
-  _voltage = (_value/1024.0) * 5.0;
-  return _voltage;
-}
-
-float TMP36::getTempC()
-{
-  _value = analogRead(_pin);
-  _voltage = (_value/1024.0) * 5.0;
-  _tempC = (_voltage - .5) * 100;  
-  return _tempC;
-}
-
-float TMP36::getTempF()
-{
+void getValues() {
   _value = analogRead(_pin);
   _voltage = (_value/1024.0) * 5.0;
   _tempC = (_voltage - .5) * 100;  
   _tempF = (_tempC * 1.8) + 32; 
+} 
+
+float TMP36::getVoltage() {
+ getValues(); 
+ return _voltage;
+}
+
+float TMP36::getTempC() {
+  getValues(); 
+  return _tempC;
+}
+
+float TMP36::getTempF() {
+  getValues();
   return _tempF;
 }
 
