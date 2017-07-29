@@ -22,8 +22,8 @@
 #include "TMP36.h"
 
 TMP36::TMP36(uint8_t pin) {
-  pinMode(pin, INPUT);
-  _pin = pin;  
+ pinMode(pin, INPUT);
+ _pin = pin;  
 }
 
 void TMP36::getValues() {
