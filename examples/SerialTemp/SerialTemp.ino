@@ -22,7 +22,7 @@
 
 //Create an instance of the TMP36 class and 
 //define the pin the sensor is connected to
-TMP36 myTMP36(A0); 
+TMP36 myTMP36(A0, 5.0); 
 
 void setup() {
   Serial.begin(9600);
