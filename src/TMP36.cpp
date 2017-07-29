@@ -27,7 +27,7 @@ TMP36::TMP36(uint8_t pin)
   _pin = pin;  
 }
 
-void getValues() {
+void TMP36::getValues() {
   _value = analogRead(_pin);
   _voltage = (_value/1024.0) * 5.0;
   _tempC = (_voltage - .5) * 100;  
