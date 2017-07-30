@@ -22,29 +22,29 @@
 #include "TMP36.h"
 
 TMP36::TMP36(uint8_t pin, float aref) {
- pinMode(pin, INPUT);
- _aref = aref;
- _pin = pin;  
+  pinMode(pin, INPUT);
+  _aref = aref;
+  _pin = pin;  
 }
 
 void TMP36::getValues() {
- _value = analogRead(_pin);
- _voltage = (_value/1024.0) * _aref;
- _tempC = (_voltage - .5) * 100;  
- _tempF = (_tempC * 1.8) + 32; 
+  _value = analogRead(_pin);
+  _voltage = (_value/1024.0) * _aref;
+  _tempC = (_voltage - .5) * 100;  
+  _tempF = (_tempC * 1.8) + 32; 
 } 
 
 float TMP36::getVoltage() {
- getValues(); 
- return _voltage;
+  getValues(); 
+  return _voltage;
 }
 
 float TMP36::getTempC() {
- getValues(); 
- return _tempC;
+  getValues(); 
+  return _tempC;
 }
 
 float TMP36::getTempF() {
- getValues();
- return _tempF;
+  getValues();
+  return _tempF;
 }
