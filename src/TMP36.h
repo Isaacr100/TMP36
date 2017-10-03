@@ -15,7 +15,7 @@
  limitations under the License.
  
  This library converts the analog values from a TMP36 temperature
- sensor directly into Celcius and Fahrenheit so you don't have to. 
+ sensor directly into Celsius and Fahrenheit so you don't have to. 
  */
 
 #ifndef TMP36_h
