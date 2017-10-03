@@ -2,21 +2,10 @@
  
  Copyright 2017 Isaac100
 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-
- http://www.apache.org/licenses/LICENSE-2.0
-
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
-
- This exmaple writes the current temperarure in celcius
+ This exmaple writes the current temperarure in celsius
  and fahrenheit to the serial monitor.
- */
+
+*/
 
 #include <TMP36.h>
 
@@ -32,15 +21,15 @@ void setup() {
 void loop() {
   //create a variable and store the current temperature in
   //celius in it using the getTempC function
-  float celcius = myTMP36.getTempC(); 
+  float celsius = myTMP36.getTempC(); 
   
   //create a variable and store the current temperature in
   //fahrenheit in it using the getTempF function
   float fahrenheit = myTMP36.getTempF(); 
 
   //Print the data to the Serial monitor
-  Serial.print("Celcius: ");
-  Serial.print(celcius);
+  Serial.print("Celsius: ");
+  Serial.print(celsius);
   Serial.print(" Fahrenheit: ");
   Serial.println(fahrenheit);
   delay(500);
