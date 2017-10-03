@@ -4,7 +4,8 @@
 
  This exmaple writes the current temperarure in celsius
  and fahrenheit to the serial monitor.
- */
+
+*/
 
 #include <TMP36.h>
 
