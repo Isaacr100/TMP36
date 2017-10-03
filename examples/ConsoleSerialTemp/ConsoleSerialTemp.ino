@@ -4,7 +4,8 @@
 
  This exmaple writes the current temperarure 
  in celsius and fahrenheit to the console.
- */
+ 
+*/
 
 #include <TMP36.h>
 #include <Bridge.h>
