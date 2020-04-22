@@ -30,6 +30,7 @@ class TMP36
     float getVoltage();
     float getTempC();
     float getTempF();
+    float getTempK();
   private:
     uint8_t _pin;
     uint8_t _value;
