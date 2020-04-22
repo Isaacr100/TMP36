@@ -1,6 +1,6 @@
 /* TMP36 library
  
- Copyright 2017 Isaac100
+ Copyright 2020 Isaac100
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -47,4 +47,9 @@ float TMP36::getTempC() {
 float TMP36::getTempF() {
   getValues();
   return _tempF;
+}
+
+float TMP36::getTempK() {
+  getValues();
+  return _tempC + 273.15;
 }
