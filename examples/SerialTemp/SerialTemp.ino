@@ -2,7 +2,7 @@
  
  Copyright 2017 Isaac100
 
- This exmaple writes the current temperarure in celsius
+ This example writes the current temperarure in celsius
  and fahrenheit to the serial monitor.
 
 */
@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   //create a variable and store the current temperature in
-  //celius in it using the getTempC function
+  //celsius in it using the getTempC function
   float celsius = myTMP36.getTempC(); 
   
   //create a variable and store the current temperature in
